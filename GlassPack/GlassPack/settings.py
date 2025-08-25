@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'GlassPack_site.apps.GlasspackSiteConfig',
     'debug_toolbar',
     'captcha',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 SITE_ID = 1
@@ -131,7 +133,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dgv7qw3bi',
+    'API_KEY': '193127429447591',
+    'API_SECRET': 'dGLRXvrH108eD9TCRZCH-ZV3jJ8',
+}
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
