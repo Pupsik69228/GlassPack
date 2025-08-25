@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'GlassPack.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.config(default="postgresql://root:R4rJDEt2YSDLs4DnVCp7AYiVXLcXREGL@dpg-d2lg783uibrs73f78jl0-a.frankfurt-postgres.render.com/glasspack_db'")
+    'default': dj_database_url.config(default="postgresql://root:R4rJDEt2YSDLs4DnVCp7AYiVXLcXREGL@dpg-d2lg783uibrs73f78jl0-a.frankfurt-postgres.render.com/glasspack_db")
 }
 
 
